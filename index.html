@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Judul Skripsi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>🎓 AI Skripsi Finder</h1>
+            <p>Generate 10 judul skripsi modern dengan bantuan AI</p>
+        </div>
+
+        <div class="card">
+            <form method="POST">
+                <input type="text" name="fakultas" placeholder="Fakultas" required>
+                <input type="text" name="prodi" placeholder="Prodi" required>
+                <input type="text" name="topik" placeholder="Minat / Topik" required>
+
+                <button type="submit">Generate ✨</button>
+            </form>
+        </div>
+
+        {% if hasil %}
+        <div class="result">
+            <h2>Hasil AI</h2>
+            <pre>{{ hasil }}</pre>
+        </div>
+        {% endif %}
+
+    </div>
+</body>
+</html>
