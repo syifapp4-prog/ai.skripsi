@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f10; /* abu gelap ChatGPT style */
+    color: #e5e5e5;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #ff9ecb; /* pink soft */
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.card {
+    background: #1a1a1d;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 158, 203, 0.08);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #ff9ecb;
+    box-shadow: 0 0 8px rgba(255, 158, 203, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #ff9ecb, #c084fc);
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.result {
+    margin-top: 20px;
+    background: #1a1a1d;
+    padding: 20px;
+    border-radius: 16px;
+    border-left: 4px solid #ff9ecb;
+    box-shadow: 0 0 20px rgba(255, 158, 203, 0.06);
+}
+
+.result h2 {
+    color: #ff9ecb;
+}
+
+pre {
+    white-space: pre-wrap;
+    color: #e5e5e5;
+}
